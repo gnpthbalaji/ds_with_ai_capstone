@@ -115,7 +115,7 @@ pip install -r requirements.txt
 
 ### 5. Build SQLite Database
 ```bash
-python src/data_loader.py
+python src/data_load.py
 ```
 
 This will:
