@@ -216,7 +216,7 @@ Start with `notebooks/01_data_preparation.ipynb` and proceed sequentially.
 
 ## License
 
-This project uses the [Creative Commons CCO: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/) Olist dataset.
+This project uses the [Creative Commons CCO: Public Domain](https://creativecommons.org/licenses/by-nc-sa/4.0/) Olist dataset.
 
 ## References
 
