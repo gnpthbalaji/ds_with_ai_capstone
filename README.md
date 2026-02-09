@@ -94,8 +94,8 @@ The Olist dataset contains information of 100k orders from 2016 to 2018 made at 
 
 ### 1. Clone the Repository
 ```bash
-git clone
-cd ecommerce-analytics-capstone
+git clone https://github.com/gnpthbalaji/ds_with_ai_capstone.git
+cd ds_with_ai_capstone
 ```
 
 ### 2. Create Virtual Environment
