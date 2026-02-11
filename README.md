@@ -206,7 +206,7 @@ Start with `notebooks/01_data_preparation.ipynb` and proceed sequentially.
 - **Predictive**: Achieve >75% accuracy in predicting poor reviews (score ≤ 3)
 - **Prescriptive**: Segment customers into 4-5 actionable groups with specific recommendations
 
-## Future Enhancements
+## Future Enhancements (Potential)
 
 - Real-time dashboard with Streamlit/Dash
 - Time series forecasting for demand
