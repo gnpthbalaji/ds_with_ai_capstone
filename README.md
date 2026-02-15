@@ -43,7 +43,6 @@
     - [Synthesis: Complete Picture of the Business](#synthesis-complete-picture-of-the-business)
       - [**The Four Core Problems**](#the-four-core-problems)
       - [**Quantified Business Opportunity**](#quantified-business-opportunity)
-  - [Repository Structure](#repository-structure)
   - [Dataset Description](#dataset-description)
   - [Technology Stack](#technology-stack)
   - [Setup Instructions](#setup-instructions)
@@ -827,56 +826,7 @@ Premium customer care           BRL 400K/year
                                 ─────────────────
 Conservative Total:             BRL 3.6M/year
 ```
-
----
-
-## Repository Structure
-
-```
-ecommerce-analytics-capstone/
-│
-├── README.md                          # Project overview and documentation
-├── requirements.txt                   # Python dependencies
-├── .gitignore                        # Git ignore file
-│
-├── data/
-│   ├── raw/                          # Original CSV files from Kaggle (not tracked)
-│   └── ecommerce.db                  # SQLite database (not tracked)
-│
-├── notebooks/
-│   ├── 01_data_preparation.ipynb     # Data loading and database setup
-│   ├── 02_exploratory_analysis.ipynb # EDA and SQL queries
-│   ├── 03_descriptive_analytics.ipynb # Patterns and trends
-│   ├── 04_diagnostic_analytics.ipynb  # Root cause analysis
-│   ├── 05_predictive_modeling.ipynb   # ML models for review prediction
-│   ├── 06_prescriptive_analytics.ipynb # Recommendations and segmentation
-│   └── 07_final_report.ipynb         # Executive summary and findings
-│
-├── sql/
-│   ├── schema.sql                    # Database schema creation
-│   ├── queries/
-│   │   ├── descriptive_queries.sql   # Summary statistics queries
-│   │   ├── diagnostic_queries.sql    # Analysis queries
-│   │   └── eda_queries.sql           # Queries from EDA file
-│   └── utils/
-│       └── helper_queries.sql        # Reusable query templates
-│
-├── src/
-│   ├── __init__.py
-│   ├── data_loader.py                # Load CSVs into SQLite
-│   ├── data_cleaner.py               # Data cleaning functions
-│   ├── feature_engineer.py           # Feature creation functions
-│   ├── models.py                     # ML model classes
-│   └── visualizations.py             # Reusable plotting functions
-│
-├── reports/
-│   ├── figures/                      # Generated visualizations
-│   ├── executive_summary.md          # 1-2 page summary
-│
-├── tests/
-│   ├── test_data_loader.py
-│   └── test_feature_engineer.py
-```
+----
 
 ## Dataset Description
 
