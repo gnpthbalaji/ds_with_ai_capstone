@@ -320,7 +320,7 @@ Very late (15+ days)    2.51 stars    3,161     -1.70
 - Customers react to BROKEN PROMISES, not duration
 - **Delay threshold effect confirmed**
 
-![Delay Threshold Impact](/reports/figures/delay_impact_analysis.png)
+![Delay Threshold Impact](/reports/figures/delay_vs_reviews.png)
 *Figure 10: Review scores degrade with increasing delay severity*
 
 **Business Impact Calculation:**
