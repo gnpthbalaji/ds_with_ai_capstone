@@ -168,7 +168,7 @@ Delayed orders:    2.50 stars average
 Impact:            -1.73 stars (MASSIVE!)
 ```
 
-![Delivery Delay Impact](/reports/figures/delay_impact_analysis.png)
+![Delivery Delay Impact](/reports/figures/delay_vs_reviews.png)
 *Figure 2: Clear negative correlation between delays and review scores*
 
 ##### **Finding 3: Geographic Concentration**
@@ -320,7 +320,7 @@ Very late (15+ days)    2.51 stars    3,161     -1.70
 - Customers react to BROKEN PROMISES, not duration
 - **Delay threshold effect confirmed**
 
-![Delay Threshold Impact](/reports/figures/delay_vs_reviews.png)
+![Delay Threshold Impact](/reports/figures/delay_impact_analysis.png)
 *Figure 10: Review scores degrade with increasing delay severity*
 
 **Business Impact Calculation:**
