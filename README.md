@@ -67,7 +67,7 @@
 ## Quick Navigation
 
 **Complete Analysis Notebooks & VP+ Level Executive Summary:**
-- [01 - Data Preparation](../notebooks/01_data_preparation.ipynb)
+- [01 - Data Preparation](/notebooks/01_data_preparation.ipynb)
 - [02 - Exploratory Analysis](/notebooks/02_exploratory_analysis.ipynb)
 - [03 - Descriptive Analytics](/notebooks/03_descriptive_analytics.ipynb)
 - [04 - Diagnostic Analytics](/notebooks/04_diagnostic_analytics.ipynb)
