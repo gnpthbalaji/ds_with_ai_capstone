@@ -79,7 +79,7 @@
 - [04 - Diagnostic Analytics](/notebooks/04_diagnostic_analytics_REVISED.ipynb)
 - [05 - Predictive Modeling](/notebooks/05_predictive_modeling.ipynb)
 - [06 - Prescriptive Analytics](/notebooks/06_prescriptive_analytics.ipynb)
-- [VP+ Executive Summary](/reports/executive_summary_md)
+- [VP+ Executive Summary](/reports/executive_summary.md)
 
 **Key Visualizations:** All charts saved in `reports/figures/`
 
