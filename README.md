@@ -1,5 +1,17 @@
 # Brazilian E-Commerce Analytics: A Comprehensive Data Analysis Project
 
+## Quick Navigation
+
+**Complete Analysis Notebooks:**
+- [01 - Data Preparation](../notebooks/01_data_preparation.ipynb)
+- [02 - Exploratory Analysis](../notebooks/02_exploratory_analysis.ipynb)
+- [03 - Descriptive Analytics](../notebooks/03_descriptive_analytics.ipynb)
+- [04 - Diagnostic Analytics](../notebooks/04_diagnostic_analytics_REVISED.ipynb)
+- [05 - Predictive Modeling](../notebooks/05_predictive_modeling.ipynb)
+- [06 - Prescriptive Analytics](../notebooks/06_prescriptive_analytics.ipynb)
+
+**Key Visualizations:** All charts saved in `reports/figures/`
+
 ## Project Overview
 An end-to-end data analytics project (Capstone - Codecademy **Data Science with AI** bootcamp) exploring customer behavior, operational efficiency, and business performance using the Brazilian E-Commerce Public Dataset by Olist. This project demonstrates descriptive, diagnostic, predictive, and prescriptive analytics capabilities.
 
@@ -15,6 +27,123 @@ What factors drive customer satisfaction in Brazilian e-commerce, and how can we
 2. **Diagnostic**: Why do certain orders receive poor reviews, and what operational factors contribute?
 3. **Predictive**: Can we predict customer review scores based on delivery performance and product characteristics?
 4. **Prescriptive**: Which customer segments should we prioritize for retention, and what operational improvements would have the highest impact?
+
+## Executive Summary
+
+### Business Problem
+
+The Brazilian e-commerce platform faces a **critical retention crisis**:
+- **97% of customers never return** after their first purchase
+- Only **3% repeat purchase rate** despite 58% five-star reviews
+- **46% of orders delayed**, causing significant customer dissatisfaction
+- **1.73 star average drop** in reviews for delayed deliveries
+
+**Core Question:** What drives customer satisfaction, and how can we optimize operations to maximize customer lifetime value?
+
+---
+
+### Complete Analysis Journey: Notebook-by-Notebook
+
+#### **Notebook 01: Data Preparation** ✅
+**📓 [View Notebook](/notebooks/01_data_preparation.ipynb)**
+
+**Objective:** Load, validate, and prepare data for analysis
+
+**Dataset Overview:**
+- **9 relational tables** with proper foreign key relationships
+- **1.6M total records** across all tables
+- **99.7% review coverage** of delivered orders (excellent data quality)
+- **Zero referential integrity issues** (clean, production-quality data)
+
+**Key Data Points:**
+- Orders: 99,441 (97% delivered, 2% shipped, 1% other)
+- Customers: 99,441 unique (1 order each on average)
+- Products: 32,951 across 71 categories
+- Sellers: 3,095 across 27 states
+- Reviews: 99,224 (57.8% gave 5 stars)
+
+**Anomaly Detected & Resolved:**
+- 102% review-to-order ratio (some orders have multiple reviews)
+- Investigation showed legitimate multi-review pattern
+
+
+#### **Notebook 02: Exploratory Data Analysis** 📊
+**📓 [View Notebook](/notebooks/02_exploratory_analysis.ipynb)**
+
+**Objective:** Discover patterns and generate hypotheses
+
+##### **Finding 1: Platform Growth Trajectory**
+
+**Growth Phases Identified:**
+1. **Launch Phase** (Sept-Dec 2016): 0-300 orders/month
+2. **Rapid Growth** (Jan-Oct 2017): 4,613% monthly growth
+3. **Maturity Phase** (Nov 2017-Aug 2018): Stable 6,000-7,000 orders/month
+
+![Monthly Order Growth](/reports/figures/monthly_order_trends.png)
+*Figure 1: Exponential growth followed by plateau at maturity*
+
+##### **Finding 2: Delivery Performance Crisis**
+
+**Delay Distribution:**
+- **54% on-time** deliveries
+- **46% delayed** orders (massive problem!)
+- Average delay: 2.3 days when late
+- Maximum delay: 189 days (extreme outlier)
+
+**Impact on Reviews:**
+```
+On-time orders:    4.23 stars average
+Delayed orders:    2.50 stars average
+Impact:            -1.73 stars (MASSIVE!)
+```
+
+![Delivery Delay Impact](/reports/figures/delay_impact_analysis.png)
+*Figure 2: Clear negative correlation between delays and review scores*
+
+##### **Finding 3: Geographic Concentration**
+
+**Top 10 States by Order Volume:**
+1. **SP (São Paulo):** 42% of all orders (41,746 orders)
+2. **RJ (Rio de Janeiro):** 13% (12,852 orders)
+3. **MG (Minas Gerais):** 12% (11,635 orders)
+4. **RS, PR, SC, BA, DF, GO, ES:** Remaining top 10
+
+**Insight:** Urban concentration creates logistics advantages for SP customers
+
+![Geographic Distribution](/reports/figures/geographic_analysis.png)
+*Figure 3: Massive concentration in SP state*
+
+##### **Finding 4: Category Performance**
+
+**Top 15 Categories by Revenue:**
+1. **health_beauty:** BRL 1.2M (8,647 orders, avg BRL 143)
+2. **watches_gifts:** BRL 950K
+3. **bed_bath_table:** BRL 888K
+4. **sports_leisure:** BRL 812K
+5. **computers_accessories:** BRL 755K
+
+**Performance Matrix (4 Quadrants):**
+- **Stars:** High volume + High satisfaction (health_beauty, sports_leisure)
+- **Niche:** Low volume + High satisfaction (specialty items)
+- **Cash Cows:** High volume + Medium satisfaction (bed_bath_table)
+- **Problem:** Any low satisfaction categories (none critical)
+
+![Category Performance Matrix](/reports/figures/category_performance.png)
+*Figure 4: Category performance across volume and satisfaction dimensions*
+
+##### **Finding 5: Order Value vs Reviews - No Correlation!**
+
+**Discovery:**
+- Correlation coefficient: ~0.02 (essentially zero)
+- **Expensive orders get NO better treatment**
+- This is a missed opportunity (no VIP service)
+
+![Order Value vs Review Score](/reports/figures/premium_vs_budget.png)
+*Figure 5: Flat relationship confirms no premium customer treatment*
+
+
+
+-----
 
 ## Repository Structure
 
@@ -43,7 +172,7 @@ ecommerce-analytics-capstone/
 │   ├── queries/
 │   │   ├── descriptive_queries.sql   # Summary statistics queries
 │   │   ├── diagnostic_queries.sql    # Analysis queries
-│   │   └── feature_engineering.sql   # Feature creation for ML
+│   │   └── eda_queries.sql           # Queries from EDA file
 │   └── utils/
 │       └── helper_queries.sql        # Reusable query templates
 │
