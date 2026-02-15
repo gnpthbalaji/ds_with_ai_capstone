@@ -70,7 +70,7 @@
 - [01 - Data Preparation](../notebooks/01_data_preparation.ipynb)
 - [02 - Exploratory Analysis](/notebooks/02_exploratory_analysis.ipynb)
 - [03 - Descriptive Analytics](/notebooks/03_descriptive_analytics.ipynb)
-- [04 - Diagnostic Analytics](/notebooks/04_diagnostic_analytics_REVISED.ipynb)
+- [04 - Diagnostic Analytics](/notebooks/04_diagnostic_analytics.ipynb)
 - [05 - Predictive Modeling](/notebooks/05_predictive_modeling.ipynb)
 - [06 - Prescriptive Analytics](/notebooks/06_prescriptive_analytics.ipynb)
 - [VP+ Executive Summary](/reports/executive_summary.md)
