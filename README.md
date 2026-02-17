@@ -156,6 +156,7 @@ The Brazilian e-commerce platform faces a **critical retention crisis**:
 - Maximum delay: 189 days (extreme outlier)
 
 **Impact on Reviews:**
+
 ```
 On-time orders:    4.23 stars average
 Delayed orders:    2.50 stars average
@@ -230,6 +231,7 @@ Impact:            -1.73 stars (MASSIVE!)
 ##### **Finding 2: Premium vs Budget Order Dynamics**
 
 **Value Segmentation:**
+
 ```
 Budget (<BRL 50):      22% of orders
 Low (BRL 50-100):      31% of orders
@@ -298,6 +300,7 @@ health_beauty has SLIGHTLY WORSE delays than average, yet still dominates!
 ##### **Finding 5: The 1.73 Star Problem - Delay Threshold Analysis**
 
 **Delay Impact by Bucket:**
+
 ```
 Delay Category          Avg Review    Orders    Δ from On-time
 ─────────────────────────────────────────────────────────────
@@ -318,6 +321,7 @@ Very late (15+ days)    2.51 stars    3,161     -1.70
 *Figure 10: Review scores degrade with increasing delay severity*
 
 **Business Impact Calculation:**
+
 ```
 Data-Driven Metrics (No Assumptions):
 ────────────────────────────────────────
@@ -360,6 +364,7 @@ All 3 months show **IDENTICAL category dominance:**
 **Hypothesis:** Marketplace model (customers buy from sellers, not platform)
 
 **Evidence from Data:**
+
 ```
 Repeat Customer Behavior:
 ────────────────────────────────────────
@@ -621,6 +626,7 @@ Poor reviews caught:               41% of all poor reviews
 ```
 
 **Cost-Benefit Analysis:**
+
 ```
 Assumptions:
 - Intervention cost per order:     BRL 10
@@ -692,6 +698,7 @@ Lost                   150         0.2%         BRL 160      ACCEPT
 ##### **Strategic Recommendations by Segment**
 
 **1. New Customers (Priority #1 - 97% of opportunity):**
+
 ```
 Size: 90,000 customers
 Current behavior: 97% never return
@@ -711,6 +718,7 @@ Expected Impact:
 ```
 
 **2. Champions (Protect High Value - 0.5%):**
+
 ```
 Size: 500 customers (but high LTV!)
 Value: BRL 890 average lifetime value
@@ -730,6 +738,7 @@ Expected Impact:
 ```
 
 **3. At Risk (Win Them Back - 0.3%):**
+
 ```
 Size: 300 customers (formerly good)
 Last purchase: 180+ days ago
@@ -754,6 +763,7 @@ Expected Impact:
 #### **The Four Core Problems**
 
 **1. Retention Crisis (97% One-Time Customers)** - STRUCTURAL
+
 ```
 Root Cause: Marketplace Model
 Evidence:
@@ -766,6 +776,7 @@ Impact: Unsustainable acquisition economics
 ```
 
 **2. Delivery Reliability Gap (46% Delays)** - OPERATIONAL
+
 ```
 Root Cause: Delivery Performance + Unrealistic Estimates
 Evidence:
@@ -790,6 +801,7 @@ Impact: Unnecessary delivery delays
 ```
 
 **4. No VIP Treatment (Price ≠ Service)** - MISSED OPPORTUNITY
+
 ```
 Root Cause: No Tiered Service Model
 Evidence:
