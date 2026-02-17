@@ -254,6 +254,7 @@ This analysis reveals that the Brazilian e-commerce retention crisis (97% one-ti
 **The 97% problem represents both the greatest challenge and the greatest opportunity.** Every percentage point improvement in retention translates to ~900 additional repeat customers and BRL 1.2M in annual revenue. The data shows the path—now execution is key.
 
 ---
+
 **Data Quality:**
 - 99.7% review coverage of delivered orders
 - Zero referential integrity issues
